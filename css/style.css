@@ -1,0 +1,29 @@
+/* @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins&display=swap");
+
+body .garamond {
+  font-family: ["EB Garamond", "serif"], !important;
+}
+body .poppins {
+  font-family: ["Poppins", "sans-serif"],!important;
+} */
+
+/* <nav class="bg-slate-500">
+        <div
+          class="flex justify-between items-center w-full max-w-7xl mx-auto font-poppins bg-green-500 py-10 px-6"
+        >
+          <img class="mb-8" src="./images/logo2.png" alt="" srcset="" />
+          <ul class="flex gap-6">
+            <li class="mb-2">Home</li>
+            <li class="mb-2">Services</li>
+            <li class="mb-2">Cases</li>
+            <li class="mb-2">Blogs</li>
+            <li class="mb-2">Contact Us</li>
+          </ul>
+          <button
+            class="bg-color01 py-2 px-4 rounded-md text-white font-poppins"
+            type="submit"
+          >
+            Free Consultation
+          </button>
+        </div>
+      </nav> */

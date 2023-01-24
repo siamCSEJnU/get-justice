@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@800&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              color01: "#B68C5A",
+              color02: "#414040",
+              color03: "#707070",
+            },
+            fontFamily: {
+              garamond: ["EB Garamond", "serif"],
+              poppins: ["Poppins", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+    <title>Assignment03</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div
+          class="lg:flex lg:justify-between lg:items-center lg:w-full lg:max-w-7xl lg:mx-auto font-poppins py-10 px-6"
+        >
+          <img class="" src="./images/logo2.png" alt="" srcset="" />
+          <ul class="lg:flex lg:gap-6 lg:relative lg:top-2 text-color03">
+            <li class="mt-4 mb-2 lg:m-0">Home</li>
+            <li class="mb-2">Services</li>
+            <li class="mb-2">Cases</li>
+            <li class="mb-2">Blogs</li>
+            <li class="mb-4">Contact Us</li>
+          </ul>
+          <button
+            data-modal-target="authentication-modal"
+            data-modal-toggle="authentication-modal"
+            class="block bg-color01 py-2 px-4 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-md text-white font-poppins hover:bg-blue-400"
+            type="submit"
+          >
+            Free Consultation
+          </button>
+
+          <!-- Main modal -->
+          <div
+            id="authentication-modal"
+            tabindex="-1"
+            aria-hidden="true"
+            class="fixed top-0 left-0 right-0 z-50 hidden w-full p-4 overflow-x-hidden overflow-y-auto md:inset-0 h-modal md:h-full font-poppins"
+          >
+            <div class="relative w-full h-full max-w-md md:h-auto">
+              <!-- Modal content -->
+              <div class="relative bg-white rounded-lg shadow dark:bg-gray-700">
+                <button
+                  type="button"
+                  class="absolute top-3 right-2.5 text-color02 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm p-1.5 ml-auto inline-flex items-center dark:hover:bg-gray-800 dark:hover:text-white"
+                  data-modal-hide="authentication-modal"
+                >
+                  <svg
+                    aria-hidden="true"
+                    class="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+                      clip-rule="evenodd"
+                    ></path>
+                  </svg>
+                  <span class="sr-only text-white">Close modal</span>
+                </button>
+                <div class="px-6 py-6 lg:px-8">
+                  <h3
+                    class="mb-4 text-xl font-medium text-color02 dark:text-white"
+                  >
+                    Get Consultation here
+                  </h3>
+                  <form class="space-y-6" action="#">
+                    <div>
+                      <label
+                        for="email"
+                        class="block mb-2 text-sm font-medium text-color02 dark:text-white"
+                        >Your email</label
+                      >
+                      <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        class="bg-gray-50 border border-gray-300 text-color02 text-sm rounded-lg focus:ring-color01 focus:border-color01 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                        placeholder="your email"
+                        required
+                      />
+                    </div>
+                    <div>
+                      <label
+                        for="text-area"
+                        class="block mb-2 text-sm font-medium text-color02 dark:text-white"
+                        >Your details</label
+                      >
+                      <input
+                        type="text"
+                        name="text-area"
+                        id="text-area"
+                        placeholder="describe details"
+                        class="bg-gray-50 border border-gray-300 text-color02 text-sm rounded-lg focus:ring-color01 focus:border-color01 block w-full p-2.5 dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-400 dark:text-white"
+                        required
+                      />
+                    </div>
+
+                    <button
+                      class="block bg-color01 py-2 px-4 focus:ring-4 focus:outline-none focus:ring-blue-300 rounded-md text-white font-poppins hover:bg-blue-400"
+                      type="submit"
+                    >
+                      Submit
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- javascript for flowbite  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.2/flowbite.min.js"></script>
+  </body>
+</html>
